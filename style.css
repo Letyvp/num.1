@@ -25,7 +25,7 @@ html {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    margin: 0 auto;
+    margin: 16px 0;
     padding: 24px 24px;
 }
 
@@ -53,8 +53,8 @@ p {
 }
 
 .bckg {
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: 550px;
     align-items: center;
 }
 
@@ -68,6 +68,7 @@ ul {
 
 li {
     list-style-type: none;
+    padding: 0px 16px;
 }
 .logo__title {
     color: black;
@@ -98,6 +99,7 @@ li {
 img {
     max-width: 100%;
     height: 40px;
+    margin: 26px;
 }
 
 a {
@@ -112,11 +114,18 @@ a:hover {
     color: rgb(89, 25, 207);
 }
 .logo {
-    width: 550px;
-    height: 550px;
-    display: flex;
+    width: 50px;
+    height: 50px;
 }
 
+.email__btn {
+    border: 1px solid black;
+    border-radius: 64px;
+    max-width: 400px;
+    height: 90px;
+    display: flex;
+    align-items: end;
+}
 .btn__menu {
     background-color: transparent;
     font-size: 40px;
@@ -195,21 +204,24 @@ header {
 }
 
 .header__container {
-    padding: 32px;
-    width: 100%;
-    max-width: 720px;
-    margin: 0 auto;
+    padding: 64px 0;
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 240px 0 240px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .header__description {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
 }
 
 textarea {
-    padding: 16px 0;
+    width: 75%;
+    max-width: 240px;
+    border: none;
 }
 
 .row {
@@ -220,15 +232,16 @@ textarea {
 
 h1 {
     align-items: start;
-    font-size: 36px;
+    font-size: 40px;
     color: rgb(0, 0, 0);
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     text-align: center;
 }
 
 h2 {
     font-size: 20px;
     flex-wrap: wrap;
+    margin: 16px;
 }
 
 h6 {
@@ -248,21 +261,24 @@ button:active {
 .btn {
     background-color: rgb(78, 14, 196);
     color: white;
-    padding: 12px 2px;
+    padding: 10px 8px;
     font-size: 20px;
     border-radius: 48px;
     border: none;
+    margin-bottom: 12px;
 }
 
 .email {
-    padding: 16px 16px;
-    border-radius: 32px;
+    color: lightgray;
+    font-size: 16px;
+    padding: 12px 12px;
+    margin: 18px;
 }
 
 /* Features */
 
 #features {
-    padding-top: 8vw;
+    height: calc(100vh- 80px);
 }
 
 .title {
@@ -274,19 +290,28 @@ button:active {
 }
 
 .feat__container {
+    padding: 96px 0;
     width: 100%;
-    padding: 8px;
+    max-width: 1280px;
+    margin: 0 180px 0 180px;
+}
+
+.service__list {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .feat__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 36px;
+    width: calc(100%/3);
+    max-width: 400px;
+    height: 200px;
 }
 
 .feat__img {
     border: 1px solid gray;
     color: rgb(78, 14, 196);
+    width: 25%;
     width: 60px;
     height: 60px;
     display: flex;
@@ -294,49 +319,93 @@ button:active {
     justify-content: center;
     border-radius: 80px;
     font-size: 32px;
-    margin-bottom: 24px;
 }
 
 .feat__subtitle {
     text-align: center;
     margin-bottom: 24px;
+    width: 80%;
 }
 
 .highlight__para {
     align-items: center;
-    max-width: 280px;
 }
 
 /* QUALITY */
 
 #quality {
-    padding: 32px;
+    padding: 96px 0;
+}
+
+.quality__container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.quality__row {
+    display: flex;
+    flex-direction: column;
 }
 
 .quality__wrapper {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 24px;
+    width: 160%;
+    max-width: 800px;
+    margin:  0 auto;
+}
+
+.quality__img {
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
 }
 
 .hero {
     margin: 10px;
-    width: 400px;
-    height: 250px;
+    width: 650px;
+    height: 500px;
     border: 1px solid rgba(128, 128, 128, 0.589);
+}
+
+.btnq {
+    background-color: rgb(78, 14, 196);
+    color: white;
+    padding: 4px;
+    margin-top: 24px;
+    width: 25%;
+    font-size: 20px;
+    border-radius: 32px;
 }
 
 /* STEPS */
 
+.steps__title {
+    text-align: center;
+}
+
+.steps__container {
+    padding: 64px 0;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 200px 0 200px;
+}
+
+.steps__row {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
 .lapt {
-    margin: 0 auto;
-    padding: 36px;
-    max-width: 500px;
-    height: 300px;
+    width: 50%;
+    max-width: 600px;
+    height: 360px;
 }
 
 .steps__list {
-    margin-left: 300px;
+    width: 70%;
+    height: 500px;
     display: flex;
     flex-direction: column;
 }
@@ -346,6 +415,219 @@ button:active {
     font-size: 24px;
     margin-right: 4px;
 }
+
+/*values */
+
+#values {
+    padding: 16px;
+    max-width: 1280px;
+    margin: 0 180px 0 180px;
+}
+
+.val__title {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.val__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.val__container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 40px 0;
+    display: flex;
+}
+
+.val__wrapper {
+    width: 70%;
+}
+
+.principles {
+    width: 55%;
+    height: 300px;
+}
+
+.val__img {
+    border: 1px solid green;
+    background-color: lightgreen;
+    color: green;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.val__imgr {
+    border: 1px solid red;
+    background-color: rgba(243, 11, 11, 0.39);
+    color: red;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.pro__img {
+    max-width: 500px;
+    height: 400px;
+}
+
+/* PRICING */
+
+.p__container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 180px 0 180px;
+    padding: 40px 0;
+}
+
+.p__rows {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.p__row {
+    border: 1px solid gray;
+    width: 30%;
+    border-radius: 5px;
+    height: 422px;
+}
+
+.plan {
+    text-align: center;
+}
+
+.plan__2 {
+    text-align: center;
+    background-color: rgba(88, 45, 241, 0.795);
+    color: white;
+}
+
+.btn1 {
+    background-color: rgb(28, 173, 184);
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 28px;
+    border: none;
+}
+
+.btn2 {
+    background-color: white;
+    color: rgb(78, 14, 196);
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 28px;
+    border: 1px solid rgb(78, 14, 196);
+}
+
+.btn3 {
+    background-color: salmon;
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 28px;
+    border: none;
+}
+
+.white {
+    color: white;
+}
+
+/* TEST */
+
+.test__container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 180px 0 180px;
+    padding: 64px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.love__pic {
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+}
+.test__row {
+    width: 40%;
+}
+
+.ratings{
+    margin-bottom: 8px;
+    color: gold;
+}
+
+/* FOOTER */
+
+.last__container {
+    background-color: rgb(78, 14, 196);
+    width: 100%;
+    height: 500px;
+    padding: 64px 0;
+}
+
+.last__rows {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer__title{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer__title:hover {
+    text-decoration: none;
+}
+
+.footer__row:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.links {
+    color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 16px 32px;
+}
+
+.link {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 16px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 16px;
+}
+
+.copyright {
+    color: rgb(187, 183, 183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
 
 /* SMALL PHONE, TABLET, LARGE SMARTPHONES */
 
