@@ -393,7 +393,7 @@ button:active {
     padding: 64px 0;
     width: 100%;
     max-width: 1080px;
-    margin: 0 200px 0 200px;
+    margin: 0 180px 0 180px;
 }
 
 .steps__row {
@@ -424,37 +424,45 @@ button:active {
 /*values */
 
 #values {
-    padding: 16px;
-    max-width: 1280px;
+    padding: 32pxpx;
+    max-width: 1180px;
+    height: 1100px;
     margin: 0 180px 0 180px;
 }
 
-.val__title {
-    width: 50%;
+.val__container {
+    padding: 64px 0;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 180px 0 180px;
     display: flex;
-    flex-direction: column;
-    text-align: start;
+    justify-content: start;
+    flex-wrap: wrap;
 }
 
 .val__row {
+    width: 100%;
     display: flex;
     flex-direction: column;
+
 }
 
-.val__container {
-    width: 100%;
+.val__text {
+    width: 50%;
     max-width: 1280px;
+    height: 800px;
     padding: 40px 0;
     display: flex;
-}
-
-.val__wrapper {
-    width: 70%;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .principles {
-    width: 55%;
+    width: 70%;
     height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
 }
 
 .val__img {
@@ -481,8 +489,13 @@ button:active {
     border-radius: 40px;
 }
 
+.val__subtitle {
+    margin: 0 16px 0 16px;
+}
+
 .pro__img {
-    max-width: 500px;
+    width: 100%;
+    max-width: 550px;
     height: 400px;
 }
 
@@ -587,21 +600,28 @@ button:active {
 
 .last__rows {
     display: flex;
-    justify-content: space-between;
-    text-align: center;
+    justify-content: space-around;
 }
 
 .footer__title{
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
+    margin-bottom: 8px;
 }
 
 .footer__title:hover {
     text-decoration: none;
 }
 
-.footer__row:hover {
+.footer__list{
+    color: white;
+    cursor: pointer;
+    flex-direction: column;
+    line-height: 24px;
+}
+
+.line:hover {
     color: white;
     text-decoration: underline;
 }
