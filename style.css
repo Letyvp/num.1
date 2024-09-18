@@ -25,12 +25,14 @@ html {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    margin: 16px 0;
-    padding: 24px 24px;
+    margin: 0 auto;
+    padding: 24px 32px;
 }
 
 .nav__links {
     display: flex;
+    justify-content: center;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -52,14 +54,12 @@ p {
     color: gray;
 }
 
-.bckg {
-    width: 550px;
-    height: 550px;
-    align-items: center;
-}
-
 .logo {
     width: 100px;
+}
+
+.frame{
+    display: flex;
 }
 
 ul {
@@ -70,10 +70,14 @@ li {
     list-style-type: none;
     padding: 0px 16px;
 }
+
 .logo__title {
     color: black;
     font-size: 32px;
     font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo__title:hover {
@@ -113,6 +117,7 @@ a:hover {
 .purple {
     color: rgb(89, 25, 207);
 }
+
 .logo {
     width: 50px;
     height: 50px;
@@ -121,11 +126,13 @@ a:hover {
 .email__btn {
     border: 1px solid black;
     border-radius: 64px;
-    max-width: 400px;
-    height: 90px;
+    max-width: 420px;
+    height: 65px;
     display: flex;
+    justify-content: space-evenly;
     align-items: end;
 }
+
 .btn__menu {
     background-color: transparent;
     font-size: 40px;
@@ -205,7 +212,7 @@ header {
 
 .header__container {
     padding: 64px 0;
-    width: 90%;
+    width: 100%;
     max-width: 1280px;
     margin: 0 240px 0 240px;
     display: flex;
@@ -213,29 +220,37 @@ header {
 }
 
 .header__description {
-    width: 100%;
-    max-width: 600px;
+    width: 70%;
+    max-width: 700px;
+}
+
+.bckg {
+    width: 700px;
     height: 600px;
 }
 
 textarea {
-    width: 75%;
     max-width: 240px;
+    height: 40px;
     border: none;
+    color: lightgrey;
 }
 
 .row {
-    width: 100%;
+    width: 40%;
     max-width: 1200px;
-    margin: 0 auto;
 }
 
 h1 {
     align-items: start;
-    font-size: 40px;
+    font-size: 44px;
     color: rgb(0, 0, 0);
     margin-bottom: 32px;
     text-align: center;
+}
+
+.move {
+    text-align: start;
 }
 
 h2 {
@@ -269,7 +284,6 @@ button:active {
 }
 
 .email {
-    color: lightgray;
     font-size: 16px;
     padding: 12px 12px;
     margin: 18px;
@@ -279,6 +293,7 @@ button:active {
 
 #features {
     height: calc(100vh- 80px);
+    padding: 96px 0;
 }
 
 .title {
@@ -289,15 +304,23 @@ button:active {
     color: rgb(78, 14, 196);
 }
 
+.feat__row {
+    width: 60%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .feat__container {
     padding: 96px 0;
     width: 100%;
     max-width: 1280px;
-    margin: 0 180px 0 180px;
+    margin: 0 190px 0 190px;
 }
 
 .service__list {
+    padding: 0 150px;
     height: 400px;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -356,7 +379,7 @@ button:active {
 
 .quality__wrapper {
     width: 160%;
-    max-width: 800px;
+    max-width: 900px;
     margin:  0 auto;
 }
 
@@ -424,9 +447,9 @@ button:active {
 /*values */
 
 #values {
-    padding: 32pxpx;
+    padding: 32px 0;
     max-width: 1180px;
-    height: 1100px;
+    height: 900px;
     margin: 0 180px 0 180px;
 }
 
@@ -501,11 +524,20 @@ button:active {
 
 /* PRICING */
 
+#pricing{
+    padding: 96px 0;
+}
+
 .p__container {
     width: 100%;
     max-width: 1280px;
     margin: 0 180px 0 180px;
-    padding: 40px 0;
+    padding: 64px 0;
+}
+
+.p__title {
+    text-align: center;
+    
 }
 
 .p__rows {
@@ -518,16 +550,24 @@ button:active {
     border: 1px solid gray;
     width: 30%;
     border-radius: 5px;
-    height: 422px;
+    height: 440px;
+}
+
+.p__row--two {
+    border: 1px solid gray;
+    width: 30%;
+    border-radius: 5px;
+    height: 440px;
+    background-color: rgba(72, 24, 247, 0.945);
 }
 
 .plan {
     text-align: center;
+    height: 440px;
 }
 
 .plan__2 {
     text-align: center;
-    background-color: rgba(88, 45, 241, 0.795);
     color: white;
 }
 
@@ -566,6 +606,10 @@ button:active {
 }
 
 /* TEST */
+
+#testimonal {
+    padding: 96px 0;
+}
 
 .test__container {
     width: 100%;
