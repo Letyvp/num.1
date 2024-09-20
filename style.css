@@ -16,22 +16,25 @@ html {
     overflow-x: hidden;
 }
 
+main {
+    flex: 1;
+    overflow: scroll;
+}
+
 .nav {
-    display: flex;
-    height: 80px;
 }
 
 .nav__container {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
     margin: 0 auto;
-    padding: 24px 32px;
+    padding: 24px 0;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .nav__links {
     display: flex;
-    justify-content: center;
     align-items: center;
     justify-content: space-around;
 }
@@ -46,6 +49,7 @@ html {
 .nav__link:hover {
     color: rgb(78, 14, 196);
     text-decoration: underline;
+    transition: all 450ms ease;
 }
 
 p {
@@ -54,12 +58,9 @@ p {
     color: gray;
 }
 
-.logo {
-    width: 100px;
-}
-
-.frame{
+.frame {
     display: flex;
+    justify-content: center;
 }
 
 ul {
@@ -103,7 +104,6 @@ li {
 img {
     max-width: 100%;
     height: 40px;
-    margin-top: 64px;
 }
 
 a {
@@ -219,14 +219,14 @@ header {
     justify-content: center;
 }
 
-.header__description {
+.header__img {
     width: 70%;
     max-width: 700px;
 }
 
 .bckg {
     width: 700px;
-    height: 600px;
+    height: 500px;
 }
 
 textarea {
@@ -237,27 +237,23 @@ textarea {
 }
 
 .row {
-    width: 40%;
+    width: 100%;
     max-width: 1200px;
-    height: 700px;
 }
 
 h1 {
-    align-items: start;
     font-size: 44px;
     color: rgb(0, 0, 0);
-    margin-bottom: 32px;
-    text-align: center;
 }
 
-.move {
-    text-align: start;
+.header__des {
+   max-width: 400px;
+   text-align: start;
+   padding: 24px 0;
 }
 
 h2 {
     font-size: 22px;
-    flex-wrap: wrap;
-    margin: 16px;
 }
 
 h6 {
@@ -460,10 +456,7 @@ button:active {
     padding: 64px 0;
     width: 90%;
     max-width: 900px;
-    margin: 0 180px 0 180px;
     display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
 }
 
 .val__row {
@@ -704,13 +697,23 @@ button:active {
 
 
 /* SMALL PHONE, TABLET, LARGE SMARTPHONES */
+@media (max-width: 924px) {
+    .nav__links {
+        width: 100%;
+    }
+}
 
 @media (max-width: 768px) {
+
     .header__container {
-        padding: 0 24px;
-        margin: 0%;
+        margin-bottom: 24px;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row {
+        width: 100%;
     }
 
     h1 {
@@ -722,19 +725,54 @@ button:active {
     }
 
     button {
-        font-size: 8px;
+        max-width: 128px;
     }
 
-    .footer {
-        width: 50%;
-        display: flex;
-        justify-content: space-around;
+    .ul {
+        display: none;
     }
 
-    .body {
-        width: 50%;
-        display: flex;
-        justify-content: space-around;
+    .nav__links {
+        display: none;
+    }
+
+    .header__img {
+        width: 100%;
+    }
+
+    .feat__container {
+        flex-direction: column;
+    }
+
+    .feat__row {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .val__container {
+        flex-direction: column;
+    }
+
+
+    .quality__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .steps__row {
+        flex-direction: column;
+    }
+
+    .p__container {
+        flex-direction: column;
+    }
+
+    .test__container {
+        flex-direction: column;
+    }
+
+    .last__container {
+        flex-direction: column;
     }
 
 }
@@ -750,11 +788,54 @@ button:active {
         display: block;
     }
 
-    main {
-        width: 100%;
+    .logo__title {
+        display: none;
+    }
+
+    #main {
+        width: 90%;
     }
     
     main:not(:last-child) {
         margin-bottom: 24px;
+    }
+
+    a {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    button {
+        max-width: 138px;
+    }
+
+    .nav__container {
+        width: 25%;
+    }
+    
+    .feat__container {
+        width: 50%;
+        text-align: center;
+    }
+
+    #values {
+        width: 50%;
+    }
+
+    footer {
+        padding: 48px 24px;
+    }
+
+    .footer__list {
+        padding: 0 4px;
+        font-size: 18px;
     }
 }
