@@ -18,10 +18,7 @@ html {
 
 main {
     flex: 1;
-    overflow: scroll;
-}
-
-.nav {
+    overflow: hidden;
 }
 
 .nav__container {
@@ -49,7 +46,7 @@ main {
 .nav__link:hover {
     color: rgb(78, 14, 196);
     text-decoration: underline;
-    transition: all 450ms ease;
+    transition: all 300ms ease;
 }
 
 p {
@@ -65,11 +62,12 @@ p {
 
 ul {
     display: flex;
+    padding: 16px 0;
 }
 
 li {
     list-style-type: none;
-    padding: 0px 16px;
+    padding: 16px 16px;
 }
 
 .logo__title {
@@ -214,7 +212,7 @@ header {
     padding: 64px 0;
     width: 100%;
     max-width: 1280px;
-    margin: 0 240px 0 240px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
@@ -237,7 +235,7 @@ textarea {
 }
 
 .row {
-    width: 100%;
+    width: 40%;
     max-width: 1200px;
 }
 
@@ -253,13 +251,18 @@ h1 {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 24px;
+    line-height: 1.5;
 }
 
-h6 {
+h3 {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h4 {
     padding: 4px;
     color: gray;
-    font-size: 12px;
 }
 
 button {
@@ -286,6 +289,10 @@ button:active {
     margin: 18px;
 }
 
+.trust {
+    padding: 24px 0;
+}
+
 /* Features */
 
 #features {
@@ -294,10 +301,7 @@ button:active {
 }
 
 .title {
-    padding: 32px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    padding: 32px 0;
     color: rgb(78, 14, 196);
 }
 
@@ -305,21 +309,21 @@ button:active {
     width: 60%;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .feat__container {
     padding: 96px 0;
     width: 100%;
     max-width: 1280px;
-    margin: 0 190px 0 190px;
+    margin: 0 auto;
 }
 
 .service__list {
     padding: 0 150px;
-    height: 400px;
-    align-items: center;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     justify-content: space-between;
 }
 
@@ -382,12 +386,6 @@ button:active {
     flex-wrap: wrap;
 }
 
-.quality__img {
-    width: 100%;
-    max-width: 700px;
-    height: 700px;
-}
-
 .hero {
     margin: 10px;
     width: 650px;
@@ -407,40 +405,38 @@ button:active {
 
 /* STEPS */
 
-.steps__title {
-    text-align: center;
-}
 
 .steps__container {
     padding: 64px 0;
-    width: 100%;
-    max-width: 1180px;
+    max-width: 1000px;
     margin: 0 auto;
-}
-
-.steps__row {
-    width: 100%;
-    height: 500px;
     display: flex;
 }
 
+.steps__row {
+    padding: 0 8px;
+}
+
 .lapt {
-    width: 50%;
-    max-width: 600px;
+    max-width: 550px;
     height: 360px;
 }
 
 .steps__list {
-    width: 70%;
-    height: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.steps__num {
+    font-size: 34px;
+    font-weight: bold;
+    display: flex;
 }
 
 .gray {
     color: gray;
-    font-size: 24px;
-    margin-right: 4px;
 }
 
 /*values */
@@ -448,48 +444,39 @@ button:active {
 #values {
     padding: 32px 0;
     max-width: 1180px;
-    height: 900px;
-    margin: 0 180px 0 180px;
+    margin: 0 auto;
 }
 
 .val__container {
     padding: 64px 0;
-    width: 90%;
-    max-width: 900px;
+    width: 100%;
     display: flex;
 }
 
 .val__row {
-    width: 100%;
     display: flex;
-    flex-direction: column;
+    margin-top: 24px;
+}
 
+.text {
+    text-align: left;
 }
 
 .val__text {
     width: 50%;
-    max-width: 1280px;
-    height: 800px;
-    padding: 40px 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    padding: 32px 0;
 }
 
-.principles {
-    width: 70%;
-    height: 300px;
+.principle {
     display: flex;
-    flex-wrap: wrap;
-    align-items: start;
 }
 
 .val__img {
-    border: 1px solid green;
+    border: 1px solid lightgreen;
     background-color: lightgreen;
     color: green;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -497,11 +484,11 @@ button:active {
 }
 
 .val__imgr {
-    border: 1px solid red;
+    border: 1px solid rgba(243, 11, 11, 0.39);
     background-color: rgba(243, 11, 11, 0.39);
     color: red;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -510,10 +497,10 @@ button:active {
 
 .val__subtitle {
     margin: 0 16px 0 16px;
+    font-weight: bold;
 }
 
 .pro__img {
-    width: 100%;
     max-width: 550px;
     height: 400px;
 }
@@ -705,6 +692,14 @@ button:active {
 
 @media (max-width: 768px) {
 
+    .nav__links {
+        display: none;
+    }
+
+    .btn__menu {
+        display: block;
+    }
+
     .header__container {
         margin-bottom: 24px;
         display: flex;
@@ -725,7 +720,7 @@ button:active {
     }
 
     button {
-        max-width: 128px;
+        max-width: 144px;
     }
 
     .ul {
@@ -737,16 +732,22 @@ button:active {
     }
 
     .header__img {
-        width: 100%;
+        width: 80%;
     }
 
     .feat__container {
         flex-direction: column;
+        padding: 12px 24px;
     }
 
-    .feat__row {
-        width: 100%;
-        flex-wrap: wrap;
+    .service__list {
+        flex-direction: column;
+        padding: 0 12px;
+        align-items: center;
+    }
+
+    #values {
+        
     }
 
     .val__container {
@@ -756,11 +757,15 @@ button:active {
 
     .quality__container {
         flex-direction: column;
-        text-align: center;
+    }
+
+    .quality__row {
+        align-items: center;
     }
 
     .steps__row {
         flex-direction: column;
+        align-items: center;
     }
 
     .p__container {
@@ -798,11 +803,6 @@ button:active {
     
     main:not(:last-child) {
         margin-bottom: 24px;
-    }
-
-    a {
-        width: fit-content;
-        margin: 0 auto;
     }
 
     h1 {
