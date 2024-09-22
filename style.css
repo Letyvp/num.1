@@ -427,6 +427,7 @@ button:active {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-left: 32px;
 }
 
 .steps__num {
@@ -449,8 +450,7 @@ button:active {
 
 .val__container {
     padding: 64px 0;
-    width: 100%;
-    display: flex;
+    width: 50%;
 }
 
 .val__row {
@@ -463,7 +463,6 @@ button:active {
 }
 
 .val__text {
-    width: 50%;
     padding: 32px 0;
 }
 
