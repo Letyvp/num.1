@@ -51,7 +51,7 @@ main {
 
 p {
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.8;
     color: gray;
     padding-top: 8px;
 }
@@ -68,7 +68,7 @@ ul {
 
 li {
     list-style-type: none;
-    padding: 16px 16px;
+    padding: 12px 16px;
 }
 
 .logo__title {
@@ -220,11 +220,10 @@ header {
 
 .header__img {
     width: 70%;
-    max-width: 700px;
 }
 
 .bckg {
-    width: 700px;
+    width: 100%;
     height: 500px;
 }
 
@@ -241,8 +240,9 @@ textarea {
 }
 
 h1 {
-    font-size: 44px;
+    font-size: 48px;
     color: rgb(0, 0, 0);
+    padding: 4px 0;
 }
 
 .header__des {
@@ -257,7 +257,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 1.5;
 }
 
@@ -321,7 +321,7 @@ button:active {
 }
 
 .service__list {
-    padding: 0 150px;
+    padding: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -366,20 +366,21 @@ button:active {
 }
 
 .quality__row {
-    width: 95%;
+    width: 70%;
     display: flex;
     flex-direction: column;
 }
 
 .quality__wrapper {
-    width: 160%;
-    max-width: 900px;
-    margin:  0 auto;
-    flex-wrap: wrap;
+    width: 100%;
+}
+
+.quality__img {
+    width: 100%;
 }
 
 .quality__des {
-    margin-bottom: 32px;
+    margin: 32px 0 32px 0;
 }
 
 .hero {
@@ -401,12 +402,17 @@ button:active {
 
 /* STEPS */
 
+#steps {
+    margin: 0 auto;
+}
 
 .steps__container {
-    padding: 64px 0;
-    max-width: 1000px;
+    padding: 84px 0;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
 }
 
 .steps__img {
@@ -422,13 +428,16 @@ button:active {
     max-width: 550px;
     height: 360px;
 }
+.steps__title {
+    padding: 16px 0;
+}
 
 .steps__list {
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 32px;
+    margin-left: 52px;
 }
 
 .steps__num {
@@ -438,7 +447,7 @@ button:active {
 }
 
 .gray {
-    color: gray;
+    color: rgba(128, 128, 128, 0.842);
 }
 
 /*values */
@@ -456,7 +465,7 @@ button:active {
 }
 
 .val__row {
-    margin: 24px 0 24px 0;
+    padding: 24px 0;
     display: flex;
 }
 
@@ -496,8 +505,12 @@ button:active {
     margin: 0 20px 0 20px;
 }
 
+.val__pic {
+    width: 100%;
+}
+
 .pro__img {
-    max-width: 550px;
+    max-width: 500px;
     height: 400px;
 }
 
@@ -516,49 +529,75 @@ button:active {
 
 .p__title {
     text-align: center;
-    
+    padding: 16px 0;
 }
 
 .p__rows {
     padding: 24px 0;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .p__row {
     border: 1px solid gray;
     width: 30%;
-    border-radius: 5px;
-    height: 440px;
+    border-radius: 4px;
+    margin-bottom: 24px;
 }
 
 .p__row--two {
     border: 1px solid gray;
     width: 30%;
-    border-radius: 5px;
-    height: 440px;
-    background-color: rgba(72, 24, 247, 0.945);
+    border-radius: 4px;
+    height: 510px;
+    background-color: rgba(72, 24, 247, 0.795);
+    margin-bottom: 24px;
 }
 
 .plan {
     text-align: center;
-    height: 440px;
+    padding: 16px 0;
+}
+
+.companies {
+    padding: 16px 0;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.btn__des {
+    padding: 20px 0;
+    text-align: center;
 }
 
 .plan__2 {
     text-align: center;
+    padding: 18px 0;
     color: white;
 }
 
+.col__line {
+    border: 3px solid rgba(26, 197, 209, 0.664);
+}
+
+.col__line--two {
+    border: 3px solid salmon;
+}
+
 .btn1 {
-    background-color: rgb(28, 173, 184);
+    background-color: rgba(26, 197, 209, 0.664);
     color: white;
     padding: 12px 24px;
     font-size: 20px;
     font-weight: bold;
     border-radius: 28px;
     border: none;
+}
+
+.btn1:hover {
+    filter: drop-shadow(20%);
+    transform: scale(1.1);
 }
 
 .btn2 {
@@ -581,6 +620,16 @@ button:active {
     border: none;
 }
 
+.btn2:hover {
+    filter: drop-shadow(20%);
+    transform: scale(1.1);
+}
+
+.btn3:hover {
+    filter: drop-shadow(20%);
+    transform: scale(1.1);
+}
+
 .white {
     color: white;
 }
@@ -599,13 +648,19 @@ button:active {
     display: flex;
     justify-content: space-between;
 }
+
+.test__img {
+    width: 100%;
+}
+
 .love__pic {
     width: 100%;
     max-width: 600px;
     height: 600px;
 }
 .test__row {
-    width: 40%;
+    width: 100%;
+    margin-left: 36px;
 }
 
 .ratings{
@@ -618,7 +673,6 @@ button:active {
 .last__container {
     background-color: rgb(78, 14, 196);
     width: 100%;
-    height: 500px;
     padding: 64px 0;
 }
 
@@ -648,6 +702,7 @@ button:active {
 .line:hover {
     color: white;
     text-decoration: underline;
+    transition: all 3000ms ease;
 }
 
 .links {
@@ -680,6 +735,23 @@ button:active {
 
 
 /* SMALL PHONE, TABLET, LARGE SMARTPHONES */
+
+@media (max-width:1400px) {
+    .p__container {
+        flex-direction: column;
+    }
+
+    .p__rows {
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 0;
+    }
+
+    .test__container {
+        width: 80%;
+    }
+}
+
 @media (max-width: 924px) {
     .nav__links {
         width: 100%;
@@ -704,7 +776,7 @@ button:active {
     }
 
     .row {
-        width: 100%;
+        width: 90%;
     }
 
     h1 {
@@ -744,14 +816,34 @@ button:active {
 
     .val__container {
         flex-direction: column;
+        align-items: center;
     }
 
+    .valo {
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .btnq {
+        width: 120px;
+    }
+
+    .val__pic {
+        width: 60%;
+    }
 
     .quality__container {
         flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
 
     .quality__row {
+        align-items: center;
+    }
+
+    .steps__container {
+        flex-direction: column;
         align-items: center;
     }
 
@@ -760,17 +852,18 @@ button:active {
         align-items: center;
     }
 
-    .p__container {
-        flex-direction: column;
-    }
-
     .test__container {
         flex-direction: column;
     }
 
-    .last__container {
-        flex-direction: column;
+    .test__img {
+        width: 60%;
     }
+
+    .test__row {
+        width: 60%;
+    }
+
 
 }
 
@@ -823,12 +916,21 @@ button:active {
         width: 50%;
     }
 
+    .p__container {
+        flex-direction: column;
+    }
+
     footer {
         padding: 48px 24px;
     }
 
     .footer__list {
         padding: 0 4px;
-        font-size: 18px;
+        font-size: 15px;
+    }
+
+    .links {
+        flex-direction: row;
+        justify-content: center;
     }
 }
