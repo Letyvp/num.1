@@ -16,7 +16,6 @@ html {
 }
 
 main {
-    flex: 1;
     overflow: hidden;
 }
 
@@ -32,7 +31,6 @@ main {
 .nav__links {
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
 
 .nav__link {
@@ -61,7 +59,6 @@ p {
 }
 
 ul {
-    display: flex;
     padding: 16px 0;
 }
 
@@ -133,8 +130,7 @@ a:hover {
 
 .btn__menu {
     background-color: transparent;
-    font-size: 40px;
-    text-align: center;
+    font-size: 32px;
     border: none;
     color: blueviolet;
     display: none;
@@ -323,14 +319,13 @@ button:active {
 .feat__wrapper {
     width: calc(100%/3);
     display: flex;
-    justify-content: center;
     padding: 16px 16px;
 }
 
 .feat__img {
     border: 1px solid gray;
     color: rgb(78, 14, 196);
-    width: 180px;
+    width: 150px;
     height: 70px;
     display: flex;
     align-items: center;
@@ -520,7 +515,7 @@ button:active {
 
 .p__container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 64px 0;
     flex-direction: column;
@@ -561,8 +556,8 @@ button:active {
 .companies {
     padding: 16px 0;
     text-align: center;
-    border: 1px solid rgba(128, 128, 128, 0.842);
-    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.596);
+    border-radius: 1px;
 }
 
 .btn__des {
@@ -736,20 +731,18 @@ button:active {
         flex-direction: column;
     }
 
-    .p__rows {
-        flex-direction: column;
-        align-items: center;
-        padding: 24px 0;
-    }
-
     .test__container {
         width: 80%;
     }
 }
 
 @media (max-width: 924px) {
-    .nav__links {
+    .nav__container {
         width: 100%;
+    }
+
+    .nav__link--primary {
+        display: none;
     }
     
     .valo{
@@ -760,6 +753,12 @@ button:active {
         width: 100%;
         flex-direction: column-reverse;
     }
+
+    .p__rows {
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -768,27 +767,40 @@ button:active {
         display: none;
     }
 
+    .nav__container {
+        justify-content: space-between;
+    }
+
     .btn__menu {
         display: block;
     }
 
     .header__container {
-        margin-bottom: 24px;
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .row {
-        width: 90%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__des {
+        text-align: center;
     }
 
     h1 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     h2 {
-        font-size: 16px;
+        font-size: 17px;
+    }
+
+    h3 {
+        font-size: 14px;
     }
 
     button {
@@ -815,10 +827,27 @@ button:active {
     .service__list{
         flex-direction: column;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .val__container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .val__row {
         flex-direction: column;
+    }
+
+    .val__rows {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principle {
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
 
@@ -836,7 +865,7 @@ button:active {
     }
 
     .quality__container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
         align-items: center;
     }
@@ -850,8 +879,9 @@ button:active {
         align-items: center;
     }
 
-    .steps__row {
+    .steps__num {
         flex-direction: column;
+        text-align: center;
         align-items: center;
     }
 
