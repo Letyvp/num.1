@@ -85,14 +85,15 @@ li {
 .nav__link--primary {
     margin: 24px;
     padding: 8px 28px;
-    background-color: rgb(78, 14, 196);
+    background-color: rgba(78, 14, 196, 0.952);
     color: white;
-    border: 2px solid rgb(78, 14, 196);
+    border: 2px solid rgba(78, 14, 196, 0.918);
     border-radius: 24px;
 }
 
 .nav__link--primary:hover {
     color: white;
+    background-color: rgb(76, 5, 199);
     text-decoration: none;
 }
 
@@ -247,13 +248,17 @@ button:active {
 }
 
 .btn {
-    background-color: rgb(78, 14, 196);
+    background-color: rgba(78, 14, 196, 0.932);
     color: white;
     height: 48px;
     margin-top: 4px;
     font-size: 20px;
     border-radius: 48px;
     border: none;
+}
+
+.btn:hover {
+    background-color: rgb(69, 3, 192);
 }
 
 .email {
