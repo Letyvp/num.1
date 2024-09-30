@@ -355,9 +355,10 @@ button:active {
 }
 
 .quality__row {
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
+    margin-right: 24px;
 }
 
 .quality__wrapper {
@@ -373,7 +374,6 @@ button:active {
 }
 
 .hero {
-    margin: 10px;
     width: 650px;
     height: 500px;
     border: 1px solid rgba(128, 128, 128, 0.589);
@@ -993,6 +993,24 @@ button:active {
 
     .feat__subtitle {
         text-align: center;
+    }
+
+    .quality__wrapper {
+        flex-direction: column;
+    }
+
+    .hero {
+        width: 100%;
+        height: 300px;
+    }
+
+    .steps__img {
+        flex-direction: column;
+    }
+
+    .lapt {
+        width: 100%;
+        height: 280px;
     }
 
     #values {
