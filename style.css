@@ -182,7 +182,7 @@ a:hover {
 /* LANDING */
 
 .container {
-    padding: 32px 0;
+    padding: 64px 0;
     display: flex;
     justify-content: center;
 }
@@ -201,6 +201,7 @@ a:hover {
 .img {
     width: 100%;
     opacity: 0.6;
+    padding-top: 12px;
 }
 
 h1 {
@@ -261,10 +262,11 @@ button:active {
     max-width: 100%;
     border-radius: 28px;
     position: relative;
+    height: 52px;
 }
 
 .header__des {
-    padding-top: 30px;
+    margin-top: 100px;
 }
 
 .space {
@@ -343,6 +345,10 @@ button:active {
     margin: 0 auto;
     display: flex;
     padding: 0 16px;
+}
+
+.quality__des {
+    padding-top: 16px;
 }
 
 .quality__row {
