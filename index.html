@@ -9,27 +9,33 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <section id="#home">
+    <div class="home">
         <nav>
-            <div class="nav__container">
-                <div class="frame"><img class="logo" src="./assets/logo.svg" alt=""><span class="logo__title">TREACT</span></div>
-                    <ul class="nav__links">
-                        <li><a href="#features" class="nav__link">About</a>
-                        </li>
-                        <li><a href="#testimonial" class="nav__link">Blog</a>
-                        </li>
-                        <li><a href="#pricing" class="nav__link">Pricing</a>
-                        </li>
-                        <li><a href="https://treact.owaiskhan.me/" class="nav__link">Contact Us</a>
-                        </li>
-                        <li><a href="https://treact.owaiskhan.me/" class="nav__link">Login</a>
-                        </li>
-                        <li><a href="https://treact.owaiskhan.me/" class="nav__link nav__link--primary">Sign up</a>
-                        </li>
-                    </ul>
-                    <button class="btn__menu" onclick="openMenu()">
-                        <i class="fas fa-bars"></i>
-                    </button>
+            <div class="frame">
+                <div class="logos"><img class="logo" src="./assets/logo.svg" alt=""><span class="logo__title">TREACT</span></div>
+                <ul class="nav__links">
+                    <li>
+                        <a href="#features" class="nav__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#testimonial" class="nav__link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#pricing" class="nav__link">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="https://treact.owaiskhan.me/" class="nav__link">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="https://treact.owaiskhan.me/" class="nav__link">Login</a>
+                    </li>
+                    <li>
+                        <a href="https://treact.owaiskhan.me/" class="nav__link nav__link--primary">Sign up</a>
+                    </li>
+                </ul>
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <div class="menu__backdrop">
                     <button  class="btn__menu btn__menu--close" onclick="closeMenu()">
                         <i class="fas fa-x"></i>
@@ -47,7 +53,7 @@
                         <li class="menu__list">
                             <a href="#" class="menu__link" onclick="closeMenu()">Contact Us</a>
                         </li>
-                        <li class="menu__list"></li>
+                        <li class="menu__list">
                             <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
                         </li>
                         <li class="menu__list">
@@ -57,34 +63,26 @@
                 </div>
             </div>
         </nav>
-        <header>
-            <div class="header__container">
+            <div class="container">
                 <div class="row">
                     <div class="header__des">
-                        <h1> Beautiful React Templates <span class="purple">for you.</span></h1>
-                        <h3>Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components</h3>
+                        <h1 class="space"> Beautiful React Templates <span class="purple">for you.</span></h1>
+                        <h3 class="space_b">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components</h3>
                     </div>
-                    <form class="email">
-                        <div class="input__wrapper">
-                            <textarea class="input" placeholder="
-                            Your email"></textarea>
+                        <div class="wrapper">
+                            <input type="text" placeholder="Your Email Address"/>
                                 <button class="btn">Get Started</button>
                         </div>
-                    </form>
-                    <div class="customers">
-                        <h5 class="gray"> OUR TRUSTED CUSTOMERS</h5>
-                        <figure class="trust">
-                            <img class="img" src="./assets/custom.png" alt="">
-                        </figure>
-                    </div>
+                        <div class="header__des">
+                            <h5 class="gray"> OUR TRUSTED CUSTOMERS</h5>
+                            <figure class="space">
+                                <img class="img" src="./assets/custom.png" alt="">
+                            </figure>
+                        </div>
                 </div>
-                    <div class="header__img">
-                        <img  class="bckg" src="./assets/bckg.svg" alt="">
-                    </div>
+                    <div class="svg"><img class="bckg" src="./assets/bckg.svg" alt=""></div>
             </div>
-        </header>
-    </section>
-    <main>
+    </div>
         <section id="features">
             <div class="feat__container">
                 <div class="feat__row">
@@ -92,7 +90,7 @@
                         FEATURES
                     </h3>
                     <h1>We have Amazing <span class="purple">Service.</span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, animi possimus alias quaerat doloremque voluptas! Adipisci, aliquid, nesciunt deleniti eaque quam tenetur.</p>
+                    <p class="shrink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, animi possimus alias quaerat doloremque voluptas! Adipisci, aliquid, nesciunt deleniti eaque quam tenetur.</p>
                     <div class="service__list">
                         <div class="feat__wrapper">
                             <div class="feat__img">
@@ -157,9 +155,9 @@
         <section id="quality">
             <div class="quality__container">
                 <div class="quality__row">
-                    <h3><span class="purple">QUALITY WORK</span></h3>
+                    <h4><span class="purple">QUALITY WORK</span></h4>
                     <h1 class="quality__des">Designed & Developed by <span class="purple">Professionals.</span></h1>
-                    <p>
+                    <p class="space">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat vero nostrum tempore consequuntur beatae minima voluptatum, ex accusamus animi, voluptates non eum iure fugit recusandae commodi nulla ipsum libero.
                     </p>
                     <button class="btnq">Learn More</button>
@@ -178,23 +176,23 @@
                     </div>
                     <ul class="steps__list">
                         <h3 class="steps__title"><span class="purple">STEPS</span></h3>
-                        <h1>Easy to <span class="purple">Get Started.</span></h1>
+                        <h1 class="space">Easy to <span class="purple">Get Started.</span></h1>
                         <li class="steps__num">
                             <span class="gray">01</span>
-                            <div class="steps__row"><h2>Register</h2>
-                                <p>Create an account with us using Google or Facebook.</p>
+                            <div class="steps__row"><h3>Register</h3>
+                                <h5>Create an account with us using Google or Facebook.</h5>
                             </div>
                         </li>
                         <li class="steps__num">
                             <span class="gray">02</span>
-                            <div class="steps__row"><h2>Download</h2>
-                                <p>Browse and Download the template that you like from the marketplace.</p>
+                            <div class="steps__row"><h3>Download</h3>
+                                <h5>Browse and Download the template that you like from the marketplace.</h5>
                             </div>
                         </li>
                         <li class="steps__num">
                             <span class="gray">03</span>
-                            <div class="steps__row"><h2>Run</h2>
-                                <p>Follow the instructions to setup and customize the template to your needs.</p>
+                            <div class="steps__row"><h3>Run</h3>
+                                <h5>Follow the instructions to setup and customize the template to your needs.</h5>
                             </div>
                         </li>
                     </ul>
@@ -204,9 +202,9 @@
         <section id="values">
             <div class="val__container">
                 <div class="valo">
-                    <h3 class="purple">VALUES</h3>
+                    <h4 class="purple">VALUES</h4>
                         <h1 class="steps__title">We Always Abide by Our<span class="purple"> Principles</span></h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quos consequatur animi architecto, veritatis itaque laboriosam vel cumque, nemo excepturi fugiat ducimus quisquam molestias consectetur nulla modi repellendus quod!</p>
+                        <p class="space">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quos consequatur animi architecto, veritatis itaque laboriosam vel cumque, nemo excepturi fugiat ducimus quisquam molestias consectetur nulla modi repellendus quod!</p>
                         <div class="val__row">
                             <div class="val__rows">
                                 <div class="principle">
@@ -241,9 +239,9 @@
         <section id="pricing">
             <div class="p__container">
                     <div class="p__title">
-                        <h2 class="purple">Pricing</h2>
-                        <h1>Reasonable & Flexible<span class="purple"> Plans.</span></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h3 class="purple">Pricing</h3>
+                        <h1 class="space">Reasonable & Flexible<span class="purple"> Plans.</span></h1>
+                        <p class="shrink">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                     <div class="p__rows">
                         <div class="p__row">
@@ -311,7 +309,7 @@
                 </div>
                 <div class="test__row">
                     <h2 class="purple">TESTIMONIALS</h2>
-                    <h1>Our Clients <span class="purple">Love Us.</span></h1>
+                    <h1 class="space">Our Clients <span class="purple">Love Us.</span></h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eius placeat ducimus magni reprehenderit, explicabo inventore porro dicta quas beatae minima ut neque deleniti error libero est ratione tempore dolores.</p>
                     <div class="ratings">
                         <i class=" fas fa-star"></i>
@@ -321,7 +319,7 @@
                         <i class=" fas fa-star"></i>
                     </div>
                     <h2 class="trust">Amazing User Experience</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus magnam provident, odit veritatis, quis dignissimos temporibus aperiam non eligendi a commodi obcaecati ad cupiditate sit. Dolor voluptatum atque iusto ut!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus magnam provident, odit veritatis, quis dignissimos temporibus aperiam non eligendi a commodi obcaecati ad cupiditate sit. Dolor voluptatum atque iusto ut labore et dolore magna aliqua.Ut ennim ad minim veniam, quis nostrud exercitation ullamco!</p>
                 </div>
             </div>
         </section>
@@ -339,7 +337,7 @@
                         </ul>
                 </div>
                 <div class="last__row">
-                    <div class="footer__title">Product</div>
+                    <div class="footer__title">PRODUCT</div>
                         <ul class="footer__list">
                             <li class="line">Log in</li>
                             <li class="line">Personal</li>
@@ -348,7 +346,7 @@
                         </ul>
                 </div>
                 <div class="last__row">
-                    <div class="footer__title">Press</div>
+                    <div class="footer__title">PRESS</div>
                         <ul class="footer__list">
                             <li class="line">Logos</li>
                             <li class="line">Events</li>
@@ -375,14 +373,14 @@
                         </ul>
                 </div>
             </div>
-            <div class="frame"><img class="logo" src="./assets/loogo.svg" alt=""><span class="logo__title--bottom">TREACT inc.</span></div>
-            <div class="copyright">© 2018 Treact Inc. All Rights Reserved.</div>
-            <div class="links">
-                <div class="link"><i class="fa fa-youtube"></i>
-                </div>
-                <div class="link"><i class="fa fa-twitter"></i>
-                </div>
-                <div class="link"><i class="fa fa-facebook"></i>
+            <div class="copyright"><div class="frame--bot"><img class="sec_logo" src="./assets/loogo.svg" alt=""><span class="logo__title--bottom">TREACT inc.</span></div>© 2018 Treact Inc. All Rights Reserved.
+                <div class="links">
+                    <div class="link"><i class="fa fa-youtube"></i>
+                    </div>
+                    <div class="link"><i class="fa fa-twitter"></i>
+                    </div>
+                    <div class="link"><i class="fa fa-facebook"></i>
+                    </div>
                 </div>
             </div>
         </div>
