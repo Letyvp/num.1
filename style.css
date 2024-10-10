@@ -188,7 +188,7 @@ a:hover {
 }
 
 .row {
-    width: 50%;
+    width: 70%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -239,6 +239,7 @@ button:active {
     background-color: rgba(78, 14, 196, 0.932);
     color: white;
     height: 48px;
+    padding: 12px;
     margin-top: 4px;
     font-size: 20px;
     border-radius: 48px;
