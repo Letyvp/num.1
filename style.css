@@ -373,7 +373,7 @@ button:active {
     background-color: rgba(78, 14, 196, 0.932);
     color: white;
     height: 44px;
-    margin-top: 4px;
+    margin-top: 8px;
     font-size: 20px;
     border-radius: 48px;
     border: none;
@@ -418,7 +418,7 @@ button:active {
     font-size: 34px;
     font-weight: bold;
     display: flex;
-    padding: 12px;
+    padding: 16px;
 }
 
 .gray {
@@ -656,7 +656,7 @@ button:active {
 
 .last__rows {
     display: flex;
-    padding: 0 60px;
+    padding: 60px;
 }
 
 .last__row {
