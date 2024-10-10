@@ -313,10 +313,10 @@ button:active {
 }
 
 .feat__img {
-    border: 1px solid gray;
+    border: 1px solid lightgray;
     color: rgb(98, 36, 214);
-    min-width: 70px;
-    height: 70px;
+    min-width: 65px;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
