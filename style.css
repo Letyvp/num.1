@@ -363,9 +363,9 @@ button:active {
 }
 
 .hero {
-    width: 650px;
-    height: 500px;
+    height: 450px;
     border: 1px solid rgba(128, 128, 128, 0.589);
+    padding: 24px 0;
 }
 
 .btnq {
@@ -816,7 +816,7 @@ button:active {
     }
 
     .btnq {
-        width: 70%;
+        width: 50%;
     }
 }
 
